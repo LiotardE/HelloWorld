@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarsListComponent implements OnInit {
 
-  
+  carUpdate:any;
 
   vehiculeUn:object = {
 
@@ -28,11 +28,10 @@ export class CarsListComponent implements OnInit {
     }
 
 
-
-
   constructor() { }
 
   ngOnInit(): void {
+    this.carUpdate = new Date();
   }
 
 }
