@@ -1,21 +1,18 @@
-<h1 class="my5">
-    Nos voitures
-</h1>
-
-<app-car-item [enfant]="enfantUn"></app-car-item>
-
-<app-car-item [enfant]="enfantDeux"></app-car-item>
-
-<app-car-item [enfant]="enfantTrois"></app-car-item>
-
-<h1 class="my5">
+<h1 class="my-5">
     Nos véhicules
 </h1>
 
-<app-car-item [enfant2]="enfantQuatre"></app-car-item>
+<div class="container">
 
-<app-car-item [enfant2]="enfantCinq"></app-car-item>
+    <div class="row">
+        <app-car-item [vehicule]="vehiculeUn"></app-car-item>
 
-<app-car-item [enfant2]="enfantSix"></app-car-item>
+        <app-car-item [vehicule]="vehiculeDeux"></app-car-item>
+
+        <app-car-item [vehicule]="vehiculeTrois"></app-car-item>
+    </div>
+
+
+</div>
 
 

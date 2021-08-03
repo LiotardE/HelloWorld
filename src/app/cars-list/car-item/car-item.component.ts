@@ -7,11 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CarItemComponent implements OnInit {
 
-  vehicule:string = "ferrari";
+  
 
-  @Input() enfant:any;
+  
 
-  @Input() enfant2:any;
+  @Input() vehicule:any;
 
 
   constructor() { }

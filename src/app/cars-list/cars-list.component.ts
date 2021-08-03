@@ -7,17 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarsListComponent implements OnInit {
 
-  enfantUn:string = "Andreax";
+  
 
-  enfantDeux:string = "Fille";
+  vehiculeUn:object = {
 
-  enfantTrois:string = "Garçon";
+  marque:"Mercedes AMG",
+  prix:4200
+  }
 
-  enfantQuatre:string = "Mercedes AMG";
+  vehiculeDeux:object = {
 
-  enfantCinq:string = "Range Rover Evoque";
+    marque:"Mercedes AMG",
+    prix:4200
+    }
+  
+  vehiculeTrois:object = {
 
-  enfantSix:string = "Ferrari F50";
+    marque:"Mercedes AMG",
+    prix:4200
+    }
 
 
 
