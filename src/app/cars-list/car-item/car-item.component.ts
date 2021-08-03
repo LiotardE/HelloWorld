@@ -6,9 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./car-item.component.css']
 })
 export class CarItemComponent implements OnInit {
-
   
-
   
 
   @Input() car:any;
