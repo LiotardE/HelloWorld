@@ -9,6 +9,8 @@ export class HomePageComponent implements OnInit {
 
   title: string = 'HelloWorld Estelle';
 
+  username:any;
+
   constructor() { }
 
   ngOnInit(): void {
