@@ -1,5 +1,11 @@
 <div class="card border-warning p-5 m-2">
-    <h3>{{vehicule.marque}}</h3>
-    <p>Prix :{{vehicule.prix}}</p>
+    <h3>{{car.name}}</h3>
+    <p>Origine:{{car.pays}}</p>
+    <p>0 à 100 km/h{{car.perf}} sec</p>
+    <p>Puissance:{{car.power}} CH</p>
 </div>
 
+<button (click)="onClickButton()" class="my-3 btn btn-success" [disabled]
+="isNotAvailable()">
+    Réserver
+</button>

@@ -11,12 +11,20 @@ export class CarItemComponent implements OnInit {
 
   
 
-  @Input() vehicule:any;
+  @Input() car:any;
 
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  onClickButton(){
+    alert("Vous avez réservé ce véhicule, félicitations !")
+}
+
+  isNotAvailable(){
+    return true;
+}
 
 }
