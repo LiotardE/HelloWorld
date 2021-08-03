@@ -13,6 +13,13 @@ export class CarsListComponent implements OnInit {
 
   enfantTrois:string = "Garçon";
 
+  enfantQuatre:string = "Mercedes AMG";
+
+  enfantCinq:string = "Range Rover Evoque";
+
+  enfantSix:string = "Ferrari F50";
+
+
 
 
   constructor() { }

@@ -11,6 +11,9 @@ export class CarItemComponent implements OnInit {
 
   @Input() enfant:any;
 
+  @Input() enfant2:any;
+
+
   constructor() { }
 
   ngOnInit(): void {
