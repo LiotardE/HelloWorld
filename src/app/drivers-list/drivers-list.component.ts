@@ -10,7 +10,6 @@ export class DriversListComponent implements OnInit {
   isOnline:boolean = true;
 
   
-
   games:string[] = ["PES06", "Minecraft", "Evil Dead"];
 
   constructor() { }
