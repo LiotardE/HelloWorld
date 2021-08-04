@@ -2,18 +2,11 @@
     Nos Pilotes
 </h1>
 
-<div *ngIf="isOnline" class="p-5 card bg-info">
 
-    <h2>
-       {{book.title}}
-    </h2>
+    
+    <ul>
+        <li *ngFor="let game of games">
+            {{game}}
+        </li>
+    </ul>
 
-    <p>{{ book.author }}</p>
-    <p> 
-        <span *ngIf="book.price"> prix: {{book.price}} € </span>
-
-        <span *ngIf="book.price == null  "> Non communiqué</span>
-       
-    </p>
-
-</div>
