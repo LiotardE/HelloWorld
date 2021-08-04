@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CarItemComponent implements OnInit {
   
-  bookingMessage:string = "Réservez maintenant Estelle!"
+  bookingMessage:string = "Réservez maintenant !"
   isBooked:boolean = false;
 
   @Input() car:any;
