@@ -11,6 +11,12 @@ export class DriversListComponent implements OnInit {
 
   isOnLine:boolean = true;
 
+  boo:any = {
+      title:"Le secret des croisades",
+      author: "AndréThomas",
+      price: null
+  }
+
   ngOnInit(): void {
   }
 
