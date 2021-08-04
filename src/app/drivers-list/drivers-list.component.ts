@@ -7,17 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DriversListComponent implements OnInit {
 
-  constructor() { }
+  isOnline:boolean = true;
 
-  isOnLine:boolean = true;
-
-  boo:any = {
-      title:"Le secret des croisades",
-      author: "AndréThomas",
-      price: null
+  book:any = {
+    title:"Le secret des Croisades",
+    author: "Thomadreas",
+    price: null
   }
+
+  constructor() { }
 
   ngOnInit(): void {
   }
-
 }
