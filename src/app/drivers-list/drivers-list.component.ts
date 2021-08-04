@@ -9,6 +9,8 @@ export class DriversListComponent implements OnInit {
 
   constructor() { }
 
+isOnLine:boolean = true;
+
   ngOnInit(): void {
   }
 
