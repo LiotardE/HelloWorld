@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-car-item',
@@ -6,21 +6,21 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./car-item.component.css']
 })
 export class CarItemComponent implements OnInit {
-  
-  bookingMessage:string = "Réservez maintenant !"
-  isBooked:boolean = false;
 
   @Input() car:any;
- 
 
+  isBooked:boolean = false;
+  
+  bookingMessage: string = "Réserver maintenant !";
+  
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   onBooking(){
-    this.isBooked = true;
-    this.bookingMessage = "Cette voiture est réservée !"
-}
+    this.isBooked= true;
+    this.bookingMessage= "Bonne route ! [réservée]";
+  }
 
 }

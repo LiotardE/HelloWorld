@@ -1,21 +1,9 @@
 <h1 class="my-5">
-    Nos véhicules
+    Nos Véhicules
 </h1>
 
-<div class="badge badge-dark my-5">Données mises à jour 
-     {{ carUpdate | date:"EEEE dd MM Y à H:mm" | uppercase }}</div>
+<div class="badge badge-dark my-5">Données mise à jour: {{ carUpdate | date:"dd MMMM yyyy H:mm" | uppercase }}</div>
 
-<div class="container">
-
-    <div class="row">
-        <app-car-item [car]="carOne"></app-car-item>
-
-        <app-car-item [car]="carTwo"></app-car-item>
-
-        <app-car-item [car]="carThree"></app-car-item>
-    </div>
-
-
+<div class="card-deck  justify-content-center">
+    <app-car-item  *ngFor="let oneCar of cars" [car]="oneCar" ></app-car-item>
 </div>
-
-
