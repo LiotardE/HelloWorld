@@ -7,13 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DriversListComponent implements OnInit {
 
-  isOnline:boolean = true;
+  colorOne:string = "blue";
 
   
-  games:string[] = ["PES06", "Minecraft", "Evil Dead"];
-
-  constructor() { }
+    constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getCouleur(){
+    return "green";
   }
 }

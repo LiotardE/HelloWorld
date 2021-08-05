@@ -2,11 +2,18 @@
     Nos Pilotes
 </h1>
 
+   
+<p [style.color]="colorOne">
+    Style.color et une couleur en props !
+   </p>
+   
+   <p [style.color]="getCouleur()">
+       Style.color fonctionne aussi avec une méthode ! 
+   </p>
+   
+   <p [style.color]="'gold'">
+       Style.color ou comme ça mais pas fou...(ouf)
+   </p>
 
-    
-    <ul>
-        <li *ngFor="let game of games">
-            {{game}}
-        </li>
-    </ul>
+
 
