@@ -1,38 +1,31 @@
 <h1 class="my-5">Nos Pilotes</h1>
 
-<p [style.color]="colorOne">Style.color et une couleur en props !</p>
-
-<p [style.color]="getCouleur()">
-  Style.color fonctionne aussi avec une méthode !
+<p [ngClass]="{'text-center':true}">
+    <span>
+        Un spane quoi ! NgClass 😊 !
+    </span>
 </p>
 
-<p [style.color]="'gold'">
-  <!-- en dur la couleur -->
-  Style.color ou comme ça mais pas fou...(ouf)
-</p>
+<div class="card shadow text-center">
 
-<p [style.background-color]="getCouleur()">
-  Style.color fonctionne aussi avec une méthode !
-</p>
+    <h2>{{ product.label }}</h2>
 
-<h3 [style.background-color]="onOff ? colorOne : getCouleur()">
-  ça part en live ou c'est moi ??? Donc si on mix tout ! GEnre databinding +
-  Directives...
-</h3>
+    <hr>
 
-<button (click)="onSwitch()" class="btn btn-info my-5">
-  <span *ngIf="!onOff"> ON 😊 </span>
-  <span *ngIf="onOff"> OFF 😂 </span>
-</button>
+    <h2>{{ product.price }}</h2>
 
-<div [ngStyle]="{   color:colorOne, 
-    margin:marginPts,   
-    padding:'20px'
-}">
+    <p>quantité:
+        <span [ngClass]="{
+            'badge': true,
 
-et du NgStyle la difference ?
-Declare un objet dedans...hum...hum
-Donc on peut en mettre plusieurs...DONC PLUS DE POSSIBILTés !
+            'badge-success': product.stock > 5,
+
+            'badge-warning': product.stock <= 5,
+            
+            'badge-danger': product.stock ==  0
+        }">
+            {{ product.stock }} en stocks
+        </span>
+    </p>
+
 </div>
-
-PK l'un ou l'autre

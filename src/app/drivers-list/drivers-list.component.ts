@@ -11,7 +11,12 @@ export class DriversListComponent implements OnInit {
 
   onOff:any=true;
 
-  marginPts:string = "50px";
+ product:any = {
+   label: "iphone 12",
+   price: 1255899990,
+   stock: 5
+
+ }
 
       constructor() { }
 
