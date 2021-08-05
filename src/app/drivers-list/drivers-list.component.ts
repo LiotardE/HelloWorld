@@ -11,6 +11,8 @@ export class DriversListComponent implements OnInit {
 
   onOff:any=true;
 
+  marginPts:string = "50px";
+
       constructor() { }
 
   ngOnInit(): void {
@@ -21,11 +23,11 @@ export class DriversListComponent implements OnInit {
   }
 
 onSwitch(){
-  if(this.onOff){
+  if(this.onOff)
     this.onOff = false;
-  }else {
+   else 
       this.onOff = true;
     }
   }
-}
+
 

@@ -1,38 +1,38 @@
-<h1 class="my-5">
-    Nos Pilotes
-</h1>
+<h1 class="my-5">Nos Pilotes</h1>
 
-   
-<p [style.color]="colorOne">
-    Style.color et une couleur en props !
-   </p>
-   
-   <p [style.color]="getCouleur()">
-       Style.color fonctionne aussi avec une méthode ! 
-   </p>
+<p [style.color]="colorOne">Style.color et une couleur en props !</p>
 
-   
-   <p [style.color]="'gold'"> <!-- en dur la couleur -->
-       Style.color ou comme ça mais pas fou...(ouf)
-   </p>
-
-   <p [style.background-color]="getCouleur()">
-    Style.color fonctionne aussi avec une méthode ! 
+<p [style.color]="getCouleur()">
+  Style.color fonctionne aussi avec une méthode !
 </p>
 
-<h3  
-[style.background-color]="onOff ? colorOne : getCouleur() ">
+<p [style.color]="'gold'">
+  <!-- en dur la couleur -->
+  Style.color ou comme ça mais pas fou...(ouf)
+</p>
 
-   ça part en live ou c'est moi ???
-    Donc si on mix tout !
-    GEnre databinding + Directives...
+<p [style.background-color]="getCouleur()">
+  Style.color fonctionne aussi avec une méthode !
+</p>
 
+<h3 [style.background-color]="onOff ? colorOne : getCouleur()">
+  ça part en live ou c'est moi ??? Donc si on mix tout ! GEnre databinding +
+  Directives...
 </h3>
 
-<button
-    (click)="onSwitch()"
-class="btn btn-info my-5">
-<span *ngIf="!onOff" > ON 😊 </span>
-<span *ngIf="onOff"> OFF 😂 </span>
+<button (click)="onSwitch()" class="btn btn-info my-5">
+  <span *ngIf="!onOff"> ON 😊 </span>
+  <span *ngIf="onOff"> OFF 😂 </span>
+</button>
 
-</button> 
+<div [ngStyle]="{   color:colorOne, 
+    margin:marginPts,   
+    padding:'20px'
+}">
+
+et du NgStyle la difference ?
+Declare un objet dedans...hum...hum
+Donc on peut en mettre plusieurs...DONC PLUS DE POSSIBILTés !
+</div>
+
+PK l'un ou l'autre
