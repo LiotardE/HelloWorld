@@ -10,8 +10,9 @@
    <p [style.color]="getCouleur()">
        Style.color fonctionne aussi avec une méthode ! 
    </p>
+
    
-   <p [style.color]="'gold'">
+   <p [style.color]="'gold'"> <!-- en dur la couleur -->
        Style.color ou comme ça mais pas fou...(ouf)
    </p>
 
@@ -31,7 +32,7 @@
 <button
     (click)="onSwitch()"
 class="btn btn-info my-5">
-<span *ngIf="!onOff" > ON </span>
-<span *ngIf="onOff"> OFF </span>
+<span *ngIf="!onOff" > ON 😊 </span>
+<span *ngIf="onOff"> OFF 😂 </span>
 
 </button> 
