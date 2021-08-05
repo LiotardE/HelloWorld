@@ -15,8 +15,23 @@
        Style.color ou comme ça mais pas fou...(ouf)
    </p>
 
-
-
    <p [style.background-color]="getCouleur()">
     Style.color fonctionne aussi avec une méthode ! 
 </p>
+
+<h3  
+[style.background-color]="onOff ? colorOne : getCouleur() ">
+
+   ça part en live ou c'est moi ???
+    Donc si on mix tout !
+    GEnre databinding + Directives...
+
+</h3>
+
+<button
+    (click)="onSwitch()"
+class="btn btn-info my-5">
+<span *ngIf="!onOff" > ON </span>
+<span *ngIf="onOff"> OFF </span>
+
+</button> 
