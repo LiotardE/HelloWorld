@@ -10,9 +10,13 @@ export class DriverItemComponent implements OnInit {
   @Input() driver:any;
 
   isLiked:boolean = false;
+  isUnliked:boolean = false;
+
 
   likingMessage: string = "Liker maintenant !";
-
+  unlikingMessage: string = "UnLiker maintenant !";
+ 
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -21,6 +25,11 @@ export class DriverItemComponent implements OnInit {
   onLiking(){
     this.isLiked= true;
     this.likingMessage= "Un like en plus ! [liké]";
+    
+  }
+  onUnliked(){
+    this.isUnliked= true;
+    this.unlikingMessage= "Un like en moins ! [unliké]";
   }
 
 }

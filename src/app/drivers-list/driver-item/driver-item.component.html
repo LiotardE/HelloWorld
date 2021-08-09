@@ -12,12 +12,15 @@
                                 'badge-warning': driver.category >= 1000}">{{driver.category | titlecase }}</span>
         </p>   
         
-        <p>{{driver.likeIts}}      
+        <p>{{driver.likeIts}}</p>      
             
         <hr>
+      
         <p [ngClass]="{'text-success':isLiked}">{{ likingMessage}}</p>
+        <button class="btn btn-primary" (click)="onLiking()" [disabled]="isLiked">👍</button>
 
-        <button class="btn btn-success" (click)="onLiking()" [disabled]="isLiked">Liker</button>
+        <p [ngClass]="{'text-danger':isUnliked}">{{ unlikingMessage }}</p>
+        <button class="btn btn-danger" (click)="onUnliked()" [disabled]="isUnliked">👎</button>
       
     </div>
 
