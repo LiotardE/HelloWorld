@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DriversListComponent implements OnInit {
 
+  driverUpdate:any ;
+
+
   drivers: any = [
     {
       fullName: "ken block",
@@ -70,6 +73,7 @@ export class DriversListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.driverUpdate = new Date();
   }
 
 }
