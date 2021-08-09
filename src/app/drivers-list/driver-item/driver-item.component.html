@@ -6,7 +6,12 @@
         <img [src]="driver.coverImage" class="img-fluid" alt="photo {{driver.name}}">
         <hr>
         <p>Origine : {{driver.pays | uppercase }}
-        <p>Discipline : {{driver.category | titlecase }}
+        <p>Discipline :
+            <span [ngClass]="{'badge':true,
+                                'badge-info': driver.category < 1000,
+                                'badge-warning': driver.category >= 1000}">{{driver.category | titlecase }}</span>
+        </p>   
+        
         <p>{{driver.likeIts}}      
             
         <hr>
