@@ -3,6 +3,7 @@
         <h2 class="card-title">{{driver.fullName | titlecase}}</h2>
     </div>
     <div class="card-body">
+        <img [src]="driver.coverImage" class="img-fluid" alt="photo {{driver.name}}">
         <button class="btn btn-primary">Réserver</button>
     </div>
 
