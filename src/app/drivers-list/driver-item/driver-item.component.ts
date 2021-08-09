@@ -32,4 +32,6 @@ export class DriverItemComponent implements OnInit {
     this.unlikingMessage= "Un like en moins ! [unliké]";
   }
 
+  
+
 }
