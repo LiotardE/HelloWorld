@@ -4,6 +4,12 @@
     </div>
     <div class="card-body">
         <img [src]="driver.coverImage" class="img-fluid" alt="photo {{driver.name}}">
+        <hr>
+        <p>Origine : {{driver.pays | uppercase }}
+        <p>Discipline : {{driver.category | titlecase }}
+        <p>{{driver.likeIts}}      
+            
+        <hr>
         <button class="btn btn-primary">Réserver</button>
     </div>
 
