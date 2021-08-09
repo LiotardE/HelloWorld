@@ -12,6 +12,7 @@
             <span [ngClass]="{'badge':true,
                                 'badge-info': driver.category < 1000,
                                 'badge-warning': driver.category >= 1000}">{{driver.category | titlecase }}</span>
+            <span *ngIf="driver.category == null">NC</span>
         </p>   
         
         <p>{{driver.likeIts}}</p>      
