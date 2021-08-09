@@ -6,6 +6,7 @@
 <div class="badge badge-dark my-5">Données mise à jour: </div>
 
 <div class="card-deck  justify-content-center">
-    <app-driver-item></app-driver-item>
+    <app-driver-item  *ngFor="let oneDriver of drivers" [driver]="oneDriver" ></app-driver-item>
+    
 </div>
 
