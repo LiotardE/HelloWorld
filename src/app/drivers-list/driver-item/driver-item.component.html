@@ -15,7 +15,10 @@
         <p>{{driver.likeIts}}      
             
         <hr>
-        <button class="btn btn-primary">Réserver</button>
+        <p [ngClass]="{'text-success':isLiked}">{{ likingMessage}}</p>
+
+        <button class="btn btn-success" (click)="onLiking()" [disabled]="isLiked">Liker</button>
+      
     </div>
 
 

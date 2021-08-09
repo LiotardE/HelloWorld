@@ -9,9 +9,18 @@ export class DriverItemComponent implements OnInit {
 
   @Input() driver:any;
 
+  isLiked:boolean = false;
+
+  likingMessage: string = "Liker maintenant !";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onLiking(){
+    this.isLiked= true;
+    this.likingMessage= "Un like en plus ! [liké]";
   }
 
 }
