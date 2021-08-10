@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 
 import { BananeService } from './services/banane.service';
 import { RestaurantService } from './services/restaurant.service';
+import { DataService } from './services/data.service';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { RestaurantService } from './services/restaurant.service';
   
   providers: [{ provide: LOCALE_ID, useValue: "fr-FR" },
               BananeService,
-              RestaurantService], // In providers array of @NgModule
+              RestaurantService,
+              DataService], // In providers array of @NgModule
   bootstrap: [AppComponent]
 })
 export class AppModule { }
