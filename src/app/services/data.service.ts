@@ -5,5 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
 
+  test:string = 'test1';
+
   constructor() { }
+
+  getTest(){
+    return this.test;
+}
+
 }
