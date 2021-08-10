@@ -10,8 +10,12 @@
         
         <p>Discipline :
             <span [ngClass]="{'badge':true,
-                                'badge-info': driver.category < 1000,
-                                'badge-warning': driver.category >= 1000}">{{driver.category | titlecase }}</span>
+                                'badge-success': driver.category == 'gymkhana',
+                                'badge-info': driver.category == 'rallye',
+                                'badge-primary': driver.category == 'nascar',
+                                'badge-danger': driver.category == 'drag',
+                                'badge-warning': driver.category == 'formule 1'}">
+                                {{driver.category | titlecase }}</span>
             <span *ngIf="driver.category == null">NC</span>
         </p>   
         
