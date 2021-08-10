@@ -20,10 +20,10 @@
        
         <hr>
       
-        <p [ngClass]="{'text-success':isLiked}">{{ likingMessage}}</p>
+        <p [ngClass]="{'text-success border':isLiked}">{{ likingMessage}}</p>
         <button class="btn btn-primary" (click)="onLiking()" [disabled]="isLiked">👍</button>
 
-        <p [ngClass]="{'text-danger':isUnliked}">{{ unlikingMessage }}</p>
+        <p [ngClass]="{'text-danger border':isUnliked}">{{ unlikingMessage }}</p>
         <button class="btn btn-danger" (click)="onUnliked()" [disabled]="isUnliked">👎</button>
       
     </div>
