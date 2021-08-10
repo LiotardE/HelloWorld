@@ -5,9 +5,16 @@ import { Injectable } from "@angular/core";
 
 export class BananeService {
 
-    fruit:string = "Banane Plantain";
+    fruit:string = "Banane Plantain -FROM API";
+    prix:number = 5;
+
+    //fruit:string = this.banane.getFruit();
 
     constructor(){}
 
+    getFruit(){
+        return this.fruit;
+    }
 
-}
+
+} 

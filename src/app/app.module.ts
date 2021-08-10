@@ -18,6 +18,9 @@ import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { CarItemComponent } from './cars-list/car-item/car-item.component';
 import { FormsModule } from '@angular/forms';
 
+import { BananeService } from './services/banane.service';
+import { RestaurantService } from './services/restaurant.service';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,9 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   
-  providers: [{ provide: LOCALE_ID, useValue: "fr-FR" }], // In providers array of @NgModule
+  providers: [{ provide: LOCALE_ID, useValue: "fr-FR" },
+              BananeService,
+              RestaurantService], // In providers array of @NgModule
   bootstrap: [AppComponent]
 })
 export class AppModule { }
