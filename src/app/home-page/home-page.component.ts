@@ -18,10 +18,11 @@ export class HomePageComponent implements OnInit {
 
   constructor(private banana:BananeService, 
               private resto:RestaurantService,
-              private data1:DataService) { 
+              private data:DataService
+              ) { 
     console.log(banana.getFruit())
     console.log(this.resto.name)
-    console.log(this.data1.test)
+    console.log(this.data.test)
 
   }
 

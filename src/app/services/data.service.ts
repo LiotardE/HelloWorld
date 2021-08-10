@@ -5,9 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
 
-  test:string = 'test1';
-
+ 
   test2:string = 'HAAAA';
+
+  test:string = 'Je suis le dataservice'
 
   drivers: any = [
     {
