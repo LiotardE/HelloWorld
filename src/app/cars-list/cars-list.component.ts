@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-cars-list',
@@ -11,7 +12,9 @@ export class CarsListComponent implements OnInit {
 
   cars: any; 
    
-  constructor() { }
+  constructor(private data:DataService) { 
+    this.cars = this.data.getAllCars();
+  }
 
   ngOnInit() {
     this.carUpdate = new Date();

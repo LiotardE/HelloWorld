@@ -117,15 +117,15 @@ export class DataService {
   ];
 
   constructor() {
-    console.log(this.test2);
+    
    }
 
-  getTest(){
-    return this.test;
-}
+  getAllCars(){
+    return this.cars;
+  }
 
-  getAllCars(){}
-
-  getAllDrivers(){}
+  getAllDrivers(){
+    return this.drivers;
+  }
 
 }
