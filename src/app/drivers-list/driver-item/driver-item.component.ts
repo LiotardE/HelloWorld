@@ -13,8 +13,8 @@ export class DriverItemComponent implements OnInit {
   isUnliked:boolean = false;
 
 
-  likingMessage: string = "Liker maintenant !";
-  unlikingMessage: string = "UnLiker maintenant !";
+ // likingMessage: string = "Liker maintenant !";
+ // unlikingMessage: string = "UnLiker maintenant !";
  
   
   constructor() { }
@@ -23,13 +23,15 @@ export class DriverItemComponent implements OnInit {
   }
 
   onLiking(){
-    this.isLiked= true;
-    this.likingMessage= "Un like en plus ! [liké]";
+    this.driver.likeIts++;
+    //this.isLiked= true;
+    //this.likingMessage= "Un like en plus ! [liké]";
     
   }
   onUnliked(){
-    this.isUnliked= true;
-    this.unlikingMessage= "Un like en moins ! [unliké]";
+    this.driver.likeIts--;
+    //this.isUnliked= true;
+    //this.unlikingMessage= "Un like en moins ! [unliké]";
   }
 
   
