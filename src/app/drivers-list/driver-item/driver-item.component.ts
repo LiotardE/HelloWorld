@@ -9,8 +9,8 @@ export class DriverItemComponent implements OnInit {
 
   @Input() driver:any;
 
-  isLiked:boolean = false;
-  isUnliked:boolean = false;
+  //isLiked:boolean = false;
+  //isUnliked:boolean = false;
 
 
  // likingMessage: string = "Liker maintenant !";
