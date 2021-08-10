@@ -7,7 +7,11 @@ export class DataService {
 
   test:string = 'test1';
 
-  constructor() { }
+  test2:string = 'HAAAA';
+
+  constructor() {
+    console.log(this.test2);
+   }
 
   getTest(){
     return this.test;
