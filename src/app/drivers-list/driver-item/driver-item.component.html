@@ -3,7 +3,7 @@
         <h2 class="card-title">{{driver.fullName | titlecase}}</h2>
     </div>
     <div class="card-body">
-        <img [src]="driver.coverImage" class="img-fluid" alt="photo {{driver.name}}">
+        <img [src]="driver.coverImage" class="img-fluid" width="300px"height="150px" alt="photo {{driver.name}}">
         <hr>
         <p>Origine : {{driver.pays | uppercase }}
             <span *ngIf="driver.pays == null">NC</span></p>
@@ -15,7 +15,8 @@
             <span *ngIf="driver.category == null">NC</span>
         </p>   
         
-        <p>{{driver.likeIts}}</p>      
+        <p>{{driver.likeIts}}
+            </p>      
        
         <hr>
       
