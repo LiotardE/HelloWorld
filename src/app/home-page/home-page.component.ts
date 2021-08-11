@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BananeService } from '../services/banane.service';
 import { DataService } from '../services/data.service';
+
 import { RestaurantService } from '../services/restaurant.service';
 
 @Component({
