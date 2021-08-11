@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { BananeService } from './services/banane.service';
 import { RestaurantService } from './services/restaurant.service';
 import { DataService } from './services/data.service';
+import { DriverItemComponent } from './driver-item/driver-item.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { DataService } from './services/data.service';
     DriversListComponent,
     HomePageComponent,
     FourOhFourComponent,
-    CarItemComponent
+    CarItemComponent,
+    DriverItemComponent
     
   ],
   imports: [
