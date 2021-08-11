@@ -22,6 +22,7 @@ import { BananeService } from './services/banane.service';
 import { RestaurantService } from './services/restaurant.service';
 import { DriverItemComponent } from './drivers-list/driver-item/driver-item.component';
 import { DataService } from './services/data.service';
+import { NewCarComponent } from './cars-list/new-car/new-car.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { DataService } from './services/data.service';
     HomePageComponent,
     FourOhFourComponent,
     CarItemComponent,
-    DriverItemComponent
+    DriverItemComponent,
+    NewCarComponent
     
   ],
   imports: [

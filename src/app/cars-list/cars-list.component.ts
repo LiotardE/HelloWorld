@@ -19,6 +19,8 @@ export class CarsListComponent implements OnInit {
     this.cars = this.data.getAllCars();
   }
 
+  
+
   ngOnInit() {
     this.carUpdate = new Date();
   }
