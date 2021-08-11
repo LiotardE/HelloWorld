@@ -23,6 +23,7 @@ import { RestaurantService } from './services/restaurant.service';
 import { DriverItemComponent } from './drivers-list/driver-item/driver-item.component';
 import { DataService } from './services/data.service';
 import { NewCarComponent } from './cars-list/new-car/new-car.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { NewCarComponent } from './cars-list/new-car/new-car.component';
     FourOhFourComponent,
     CarItemComponent,
     DriverItemComponent,
-    NewCarComponent
+    NewCarComponent,
+    FooterComponent
     
   ],
   imports: [
