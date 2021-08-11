@@ -20,8 +20,8 @@ import { FormsModule } from '@angular/forms';
 
 import { BananeService } from './services/banane.service';
 import { RestaurantService } from './services/restaurant.service';
+import { DriverItemComponent } from './drivers-list/driver-item/driver-item.component';
 import { DataService } from './services/data.service';
-import { DriverItemComponent } from './driver-item/driver-item.component';
 
 
 @NgModule({
