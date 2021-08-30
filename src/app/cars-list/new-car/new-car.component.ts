@@ -12,4 +12,9 @@ export class NewCarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(){
+    console.log("test");
+  }
+
+
 }
