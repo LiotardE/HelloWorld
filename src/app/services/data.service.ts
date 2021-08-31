@@ -124,6 +124,10 @@ export class DataService{
       this.cars.push(car);
     }
 
+    addDriver(driver:Driver){
+      this.drivers.push(driver);
+    }
+
     getNbBestDrivers(nb:number){
 
         var allDrivers = this.drivers.slice();

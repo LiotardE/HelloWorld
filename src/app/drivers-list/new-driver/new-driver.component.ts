@@ -14,6 +14,7 @@ export class NewDriverComponent implements OnInit {
   constructor(private data:DataService) { }
 
   ngOnInit(): void {
+    //this.data.addDriver(this.pilote);
   }
 
 }
