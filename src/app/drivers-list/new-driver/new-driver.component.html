@@ -1,1 +1,40 @@
-<p>new-driver works!</p>
+<h1 class="my-5">Créer un pilote</h1>
+<div class="col-6 border shadow my-5 p-5">
+    <form (ngSubmit)="onSubmit()" [formGroup]="driverForm">
+
+        <div class="form-group">
+            <label for="name">Nom du pilote</label>
+            <span class="text-danger" *ngIf=" driverForm.controls['fullName'].errors  && driverForm.controls['fullName'].hasError('required')  ">
+                *
+          </span> 
+            <input type="text" class="form-control" id="name" formControlName="fullName" required >
+        </div>
+
+        <div class="form-group">
+            <label for="pays">Pays d'origine</label>
+            <input type="text" class="form-control" id="pays" formControlName="pays"  required>
+        </div>
+
+        <div class="form-group">
+            <label for="coverImage">Image du pilote (url)</label>
+            <input type="text" class="form-control" id="coverImage" formControlName="coverImage"  required>
+        </div>
+
+        <div class="form-group">
+            <label for="category">Spécialité</label>
+            <select  class="form-control" formControlName="category" id="category"  required>
+                <option value="">Choisir une discipline</option>
+                <option value="rallye">Rallye</option>
+                <option value="nascar">Nascar</option>
+                <option value="drag">Drag</option>
+                <option value="formule 1">Formule 1</option>
+                <option value="gymkhana">Gymkhana</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success my-5"
+            [disabled]="driverForm.invalid">Enregistrer
+        </button>
+
+    </form>
+</div>
