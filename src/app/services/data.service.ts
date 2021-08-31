@@ -1,11 +1,11 @@
 import { Injectable } from "@angular/core";
 import { Car } from "../models/Car";
-
+import { Driver } from "../models/Driver";
 
 @Injectable()
 export class DataService{
 
-    drivers: any = [
+    drivers: Driver[]  = [
         {
           fullName: "ken block",
           pays: "usa",
@@ -43,7 +43,7 @@ export class DataService{
         },
         {
           fullName: "shirley muldowney",
-          pays: null,
+          pays: "USA",
           coverImage: "./assets/img/drivers/shirleymuldowney.jpg",
           category: "drag",
           likeIts: 5
