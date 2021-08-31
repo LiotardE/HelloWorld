@@ -24,6 +24,7 @@ import { DriverItemComponent } from './drivers-list/driver-item/driver-item.comp
 import { DataService } from './services/data.service';
 import { NewCarComponent } from './cars-list/new-car/new-car.component';
 import { FooterComponent } from './footer/footer.component';
+import { NewDriverComponent } from './drivers-list/new-driver/new-driver.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FooterComponent } from './footer/footer.component';
     CarItemComponent,
     DriverItemComponent,
     NewCarComponent,
-    FooterComponent
+    FooterComponent,
+    NewDriverComponent
     
   ],
   imports: [
