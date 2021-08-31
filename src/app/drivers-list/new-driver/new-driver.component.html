@@ -25,17 +25,17 @@
             <input type="text" class="form-control" id="coverImage" formControlName="coverImage"  required>
         </div>
 
-        <div class="form-group">
-            <label for="category">Spécialité</label>
-            <select  class="form-control" formControlName="category" id="category"  required>
-                <option value="">Choisir une discipline</option>
-                <option value="rallye">Rallye</option>
-                <option value="nascar">Nascar</option>
-                <option value="drag">Drag</option>
-                <option value="formule 1">Formule 1</option>
-                <option value="gymkhana">Gymkhana</option>
-            </select>
-        </div>
+        <select class="form-control" name="category" id="category" formControlName="category"> 
+            <option class="badge" *ngFor="let category of categories" [value]="category" [ngClass]="{
+                'badge-success': category == 'gymkhana',
+                'badge-warning': category == 'formule 1',
+                'badge-info': category == 'rallye',
+                'badge-primary': category == 'nascar',
+                'badge-danger': category == 'drag'}">
+  
+                {{ category | titlecase }}
+            </option>
+        </select> 
 
         <button type="submit" class="btn btn-success my-5"
             [disabled]="driverForm.invalid">Enregistrer

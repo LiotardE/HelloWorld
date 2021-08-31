@@ -5,6 +5,8 @@ import { Driver } from "../models/Driver";
 @Injectable()
 export class DataService{
 
+  categories:string[] = ["gymkhana", "nascar", "rallye", "drag", "formule 1"];
+
     drivers: Driver[]  = [
         {
           fullName: "ken block",
@@ -127,6 +129,11 @@ export class DataService{
     addDriver(driver:Driver){
       this.drivers.push(driver);
     }
+
+    getAllCategories(){
+      return this.categories;
+  }
+
 
     getNbBestDrivers(nb:number){
 
