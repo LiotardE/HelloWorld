@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
+import { DataService } from 'src/app/services/data.service';
+
 @Component({
   selector: 'app-new-driver',
   templateUrl: './new-driver.component.html',
@@ -7,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewDriverComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data:DataService) { }
 
   ngOnInit(): void {
   }
