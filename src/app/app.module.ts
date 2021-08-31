@@ -16,7 +16,7 @@ import { DriversListComponent } from './drivers-list/drivers-list.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { CarItemComponent } from './cars-list/car-item/car-item.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { BananeService } from './services/banane.service';
 import { RestaurantService } from './services/restaurant.service';
@@ -43,7 +43,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   
   providers: [{ provide: LOCALE_ID, useValue: "fr-FR" },
