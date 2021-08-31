@@ -7,7 +7,12 @@
             <span class="text-danger" *ngIf=" driverForm.controls['fullName'].errors  && driverForm.controls['fullName'].hasError('required')  ">
                 *
           </span> 
+
             <input type="text" class="form-control" id="name" formControlName="fullName" required >
+
+            <small class="badge badge-danger my-2" *ngIf="driverForm.controls['fullName'].hasError('required') &&  driverForm.controls['fullName'].touched " >
+                Ce champ est requis
+            </small>
         </div>
 
         <div class="form-group">
