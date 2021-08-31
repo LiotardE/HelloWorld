@@ -25,6 +25,8 @@ import { DataService } from './services/data.service';
 import { NewCarComponent } from './cars-list/new-car/new-car.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewDriverComponent } from './drivers-list/new-driver/new-driver.component';
+import { DataFromApiComponent } from './data-from-api/data-from-api.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -39,14 +41,16 @@ import { NewDriverComponent } from './drivers-list/new-driver/new-driver.compone
     DriverItemComponent,
     NewCarComponent,
     FooterComponent,
-    NewDriverComponent
+    NewDriverComponent,
+    DataFromApiComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   
   providers: [{ provide: LOCALE_ID, useValue: "fr-FR" },
